@@ -2,7 +2,7 @@
 IoT - SW  developer Class
 
 ### 1강
-'''
+```
 IoT (Internet of Things) (사물인터넷)
 3C: 콘텐츠, 커넥션, 컨트롤
 
@@ -64,4 +64,4 @@ char
 
 int
  4byte=32bit 
-'''
+```
