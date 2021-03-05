@@ -418,7 +418,7 @@ char * = string(문자열) 이다.
 
 
 
-<typedef 의 적용>
+<typedef 의 적용> : 호환성을 높여준다.
 1,2번 같은거다.
 1.
 struct Data
