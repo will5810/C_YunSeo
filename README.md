@@ -349,10 +349,10 @@ https://kcoder.tistory.com/entry/getchar-getch-getche%EC%9D%98-%EC%B0%A8%EC%9D%B
 ```
 
 
-```
+
 ### 4강
 
-
+'''
 [포인터]
 
 void : 정해지지 않는 주소
