@@ -91,7 +91,7 @@ for 문
 switch case 문
 ```
 
-###3강
+### 3강
 ```
 [함수]
   반환값이 있을때, 없을때 유의
@@ -350,7 +350,7 @@ https://kcoder.tistory.com/entry/getchar-getch-getche%EC%9D%98-%EC%B0%A8%EC%9D%B
 
 
 ```
-###4강
+### 4강
 
 
 [포인터]
