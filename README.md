@@ -1129,5 +1129,74 @@ int main()
 
     return 0;
 }*/
+
+void FileTest()
+{
+    char *buf = (char*)malloc(255); //중간에 메모리공간을 확보할수 있다 malloc함수 
+
+
+    NOTE *fp = fopen("D:\\C_Yunseo\\test.txt", "rb");  // 경로를 표시할때는 \\ 두개를 써줘야한다.  
+    fscanf(fp, "%s",buf);  
+
+    printf("파일에서 읽은 문자열: \"%s\" ", buf);    
+
+    fclose(fp);   
+
+}
+
+
+int main()
+{
+	FILE *fp= fopen("D:\\C_Yunseo\\test.txt","ab");  //FILE* fopen(const char * filename, const char * mode)
+	
+	
+	fprintf(fp,"Hello! ever");  //int fprintf(FILE* stream,const char* format, ...)
+	
+	FileTest();
+	fclose(fp);
+}
+*/
+
+//파일을 이용해 성적처리 프로그램
+//데이터 파일을 open하여 읽어오기
+// --->	이름  	과목명1	과목명2	과목명3	총점	평균	석차 
+// --->	홍길동  점수1	점수2	점수3	총점	실수	등수 
+
+#define PNUM 100
+
+int main()
+{
+	//int pNum=100
+	int i,j,k,n;
+    int *eng,*kor,*san;
+    char **name;
+    
+    eng=(int*)malloc(PNUM* sizeof(int)); // 명시적인 형변환을 해줘야한다. casting 연산을 해줘야한다. 
+    kor=(int*)malloc(PNUM* sizeof(int));
+    san=(int*)malloc(PNUM* sizeof(int));
+
+    //name=(char**)malloc(PNUM*10);
+
+	FILE *fp= fopen("D:\\C_Yunseo\\test.txt","rb");
+	
+	for(i=0;i<PNUM;i++)
+	{
+		k=fscanf(fp,"%d %d %d",kor+i,san+i,san+i);
+		if(k!=3)  break;
+	
+	
+	} 
+	n=i;  // for 문 종료되었을 때의 i 값은 무엇을 가리키나요? :데이터의 갯수  (줄의 갯수) 
+	for(i=0;i<n;i++)
+	{
+		printf("%d	%d	%d \n", *(kor+i),*(eng+i),*(san+i));
+	}
+	fprintf(fp,"Hello! ever");
+
+	
+	fclose(fp);
+}
+
+
 ```
 
