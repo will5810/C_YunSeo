@@ -1109,5 +1109,25 @@ int main()
 visual studio
 
 asp.net 웹개발 , azure 개발 , net데스크톱 개발, c++를 사용한 데스크톱개발, 데이터 스토리지 및처리
+/*
+int main()
+{
+    char buf[256];
+
+
+    FILE *fp = fopen("D:\\C_YunSeo\\Week2\\test.txt", "rb");  // 경로를 표시할때는 \\ 두개를 써줘야한다.  
+    
+
+	for(int i=0;i<3;i++)
+	{
+	
+	  fscanf(fp, "%s", buf);  
+      printf("%s \n", buf );   
+    }
+
+    fclose(fp);   
+
+    return 0;
+}*/
 ```
 
