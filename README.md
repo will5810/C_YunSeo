@@ -1049,4 +1049,65 @@ int strPos(char *str,char *s1)
 ```
 
 
+### 6강
+
+```
+stdin  --> File의 한종류이다
+stdout
+
+[파일의 OPEN]
+
+FILE* fopen ( char *filename , char *mode)
+
+파일접근 모드
+  : 개방한 파일의 사용 용도를 결정
+ r  : read 
+ w : write
+ a : append 
+
+데이터 입,출력 모드
+ t : 텍스트모드 
+ b : 2진모드    ex) "rb" , "wb"
+
+
+
+#include <stdio.h>
+#include <io.h>
+
+/*
+int main()
+{
+	FILE *fp= fopen("test.txt","ab");  //FILE* fopen(const char * filename, const char * mode)
+	
+	
+	fprintf(fp,"Hello Everybody!");  //int fprintf(FILE* stream,const char* format, ...)
+	
+	fclose(fp);
+}
+*/
+// folder == directory
+ 
+
+int main()
+{
+    char s1[10];
+
+
+    FILE *fp = fopen("D:\\C_YunSeo\\Week2\\test.txt", "r");  // 경로를 표시할때는 \\ 두개를 써줘야한다.  
+    fscanf(fp, "%s", s1);  
+
+    printf("%s \n", s1);    
+
+    fclose(fp);   
+
+    return 0;
+}
+
+
+
+
+visual studio
+
+asp.net 웹개발 , azure 개발 , net데스크톱 개발, c++를 사용한 데스크톱개발, 데이터 스토리지 및처리
+```
 
