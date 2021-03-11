@@ -1108,7 +1108,7 @@ int main()
 
 visual studio
 
-asp.net 웹개발 , azure 개발 , net데스크톱 개발, c++를 사용한 데스크톱개발, 데이터 스토리지 및처리
+asp.net 웹개발 , c++를 사용한 데스크톱개발, net을 사용한모바일개발,  데이터 스토리지 및처리 , visual 확장개발
 /*
 int main()
 {
